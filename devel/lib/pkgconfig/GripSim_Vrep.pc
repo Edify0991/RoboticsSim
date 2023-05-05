@@ -1,0 +1,8 @@
+prefix=/home/edifier/code/RoboSim_ws/devel
+
+Name: GripSim_Vrep
+Description: Description of GripSim_Vrep
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

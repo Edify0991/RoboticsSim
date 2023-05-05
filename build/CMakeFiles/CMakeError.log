@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/edifier/code/RoboSim_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c7111/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c7111.dir/build.make CMakeFiles/cmTC_c7111.dir/build
+make[1]: 进入目录“/home/edifier/code/RoboSim_ws/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c7111.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c7111.dir/CheckSymbolExists.c.o   -c /home/edifier/code/RoboSim_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c7111
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7111.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c7111.dir/CheckSymbolExists.c.o  -o cmTC_c7111 
+CMakeFiles/cmTC_c7111.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c7111.dir/build.make:97: recipe for target 'cmTC_c7111' failed
+make[1]: *** [cmTC_c7111] Error 1
+make[1]: 离开目录“/home/edifier/code/RoboSim_ws/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_c7111/fast' failed
+make: *** [cmTC_c7111/fast] Error 2
+
+File /home/edifier/code/RoboSim_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/edifier/code/RoboSim_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7c3a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7c3a.dir/build.make CMakeFiles/cmTC_d7c3a.dir/build
+make[1]: 进入目录“/home/edifier/code/RoboSim_ws/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d7c3a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d7c3a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d7c3a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7c3a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d7c3a.dir/CheckFunctionExists.c.o  -o cmTC_d7c3a -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d7c3a.dir/build.make:97: recipe for target 'cmTC_d7c3a' failed
+make[1]: *** [cmTC_d7c3a] Error 1
+make[1]: 离开目录“/home/edifier/code/RoboSim_ws/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_d7c3a/fast' failed
+make: *** [cmTC_d7c3a/fast] Error 2
+
+

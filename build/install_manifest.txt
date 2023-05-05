@@ -1,0 +1,9 @@
+/home/edifier/code/RoboSim_ws/install/_setup_util.py
+/home/edifier/code/RoboSim_ws/install/env.sh
+/home/edifier/code/RoboSim_ws/install/setup.bash
+/home/edifier/code/RoboSim_ws/install/local_setup.bash
+/home/edifier/code/RoboSim_ws/install/setup.sh
+/home/edifier/code/RoboSim_ws/install/local_setup.sh
+/home/edifier/code/RoboSim_ws/install/setup.zsh
+/home/edifier/code/RoboSim_ws/install/local_setup.zsh
+/home/edifier/code/RoboSim_ws/install/.rosinstall
