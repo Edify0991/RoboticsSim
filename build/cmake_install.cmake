@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/edifier/code/RoboSim_ws/build/gtest/cmake_install.cmake")
   include("/home/edifier/code/RoboSim_ws/build/GripSim_Vrep/cmake_install.cmake")
+  include("/home/edifier/code/RoboSim_ws/build/myrobot_simulation/cmake_install.cmake")
 
 endif()
 

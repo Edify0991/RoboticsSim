@@ -54,7 +54,7 @@ def main():
               print("Receiving point clouds data ...")
               time.sleep(1)
        P_center=find_point_center()
-       target_pose = np.array([P_center[0],P_center[1],P_center[2],0,0,0])
+       target_pose = np.array([P_center[0],P_center[1],P_center[2],0,2,0])
        print("Target pose is {}".format(target_pose))
        # STEP2: control robot 
        frequency = 10
@@ -66,7 +66,7 @@ def main():
                 this_robot_joints = robot_joints
                 Jaco = Jacob(np.array(this_robot_joints))
                 error = target_pose - robot_end_pose
-                w_weight=np.array([[0.5,0.,0.,0.,0.,0.],[0.,0.5,0.,0.,0.,0.],[0.,0.,0.5,0.,0.,0.],[0.,0.,0.,.01,0.,0.],[0.,0.,0.,0.,.01,0.],[0.,0.,0.,0.,0.,.01]])
+                w_weight=np.array([[0.5,0.,0.,0.,0.,0.],[0.,0.5,0.,0.,0.,0.],[0.,0.,0.5,0.,0.,0.],[0.,0.,0.,.1,0.,0.],[0.,0.,0.,0.,.1,0.],[0.,0.,0.,0.,0.,.1]])
                 d_pose = np.matmul(np.linalg.pinv(Jaco) ,dt*np.matmul(w_weight,error))
                 if abs( np.linalg.det(Jaco) )<0.01:
                        d_pose = np.array([-0.01,-0.01,-0.01,0.01,0.01,0.01])

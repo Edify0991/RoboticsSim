@@ -15,10 +15,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "myrobot_simulation/catkin_generated/ordered_paths.cmake"
+  "myrobot_simulation/catkin_generated/package.cmake"
   "/home/edifier/code/RoboSim_ws/src/CMakeLists.txt"
   "/home/edifier/code/RoboSim_ws/src/GripSim_Vrep/CMakeLists.txt"
   "/home/edifier/code/RoboSim_ws/src/GripSim_Vrep/package.xml"
+  "/home/edifier/code/RoboSim_ws/src/GripSim_Vrep/scripts/control_by_kinect.py"
+  "/home/edifier/code/RoboSim_ws/src/GripSim_Vrep/scripts/control_by_kinect_all_process.py"
   "/home/edifier/code/RoboSim_ws/src/GripSim_Vrep/scripts/kinect_read.py"
+  "/home/edifier/code/RoboSim_ws/src/myrobot_simulation/CMakeLists.txt"
+  "/home/edifier/code/RoboSim_ws/src/myrobot_simulation/package.xml"
   "/opt/ros/melodic/share/catkin/cmake/../package.xml"
   "/opt/ros/melodic/share/catkin/cmake/all.cmake"
   "/opt/ros/melodic/share/catkin/cmake/assert.cmake"
@@ -176,6 +182,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "GripSim_Vrep/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "myrobot_simulation/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

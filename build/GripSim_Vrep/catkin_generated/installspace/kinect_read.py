@@ -8,7 +8,7 @@ output_file = "pc.pcd"
 
 def save_pcd(msg):
         points = point_cloud2.read_points_list(msg, field_names= ("x", "y", "z"))
-        with open("./src/see_and_touch/scripts/output.csv", "w+") as f:
+        with open("/home/edifier/code/RoboSim_ws/src/GripSim_Vrep/scripts/output.csv", "w+") as f:
                 for point in points:
                         f.write("{}, {}, {}\n".format(point.x, point.y, point.z))
         #print("save one")

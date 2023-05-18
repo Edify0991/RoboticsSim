@@ -56,3 +56,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/GripSim_Vrep" TYPE PROGRAM FILES "/home/edifier/code/RoboSim_ws/build/GripSim_Vrep/catkin_generated/installspace/kinect_read.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/GripSim_Vrep" TYPE PROGRAM FILES "/home/edifier/code/RoboSim_ws/build/GripSim_Vrep/catkin_generated/installspace/control_by_kinect_all_process.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/GripSim_Vrep" TYPE PROGRAM FILES "/home/edifier/code/RoboSim_ws/build/GripSim_Vrep/catkin_generated/installspace/control_by_kinect.py")
+endif()
+

@@ -1,2 +1,2 @@
-GripSim_Vrep
+GripSim_Vrep:myrobot_simulation
 -DCATKIN_DEVEL_PREFIX=/home/edifier/code/RoboSim_ws/devel -DCMAKE_INSTALL_PREFIX=/home/edifier/code/RoboSim_ws/install -G Unix Makefiles
